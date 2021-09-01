@@ -223,8 +223,11 @@ section{
 }
 
 footer{
-	padding: 4vw;
-	border-top: 1px solid #B9C1CC;
+	padding: 1vw;
+}
+
+footer a{
+	padding: 0 10px;
 }
 
 /*.footer{
@@ -407,6 +410,8 @@ a.button:hover{
 	header p{
 		font-size: ;
 		text-align: center;
+		max-width: 80%;
+		margin: 20px auto;
 	}
 
 	.logo{
