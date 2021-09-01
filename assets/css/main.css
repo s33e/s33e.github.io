@@ -17,6 +17,16 @@ body{
 	font-size: 18px;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #FFFFFF;
+  background: #3CC5EF;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #3CC5EF;
+}
+
 /****************/
 /**** COLORS ****/
 /****************/
