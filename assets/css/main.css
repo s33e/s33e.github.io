@@ -1,6 +1,7 @@
 /*****************/
 /**** GENERAL ****/
 /*****************/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
 
 html{
 	scroll-behavior: smooth;
@@ -116,9 +117,12 @@ footer h4{
 	color: #B9C1CC;
 }
 
-p.statement{
-	margin: 4vw auto; 
+h2.statement{
+	margin: 4vw auto;
+	line-height: 1.5;
+	font-size: 1.3rem;
 	text-align: center;
+	letter-spacing: 1;
 }
 
 a{
@@ -227,6 +231,10 @@ section{
 .info{
 	clear: both;
 	margin-top: 10vw: 
+}
+
+.reminder{
+	background: #E6E9ED;
 }
 
 footer{
@@ -508,7 +516,8 @@ a.button:hover{
 		width: 94%;
 		min-height: 40px; 
 		padding: 0 3px 0;
-		margin-left: 6%;
+		/*margin-left: 6%;*/
+		margin-left: 5.5%;
 	}
 
 	a.button{
