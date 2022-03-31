@@ -155,7 +155,8 @@ a:hover{
 
 .item:hover{
 	/*border: 1px solid green;*/
-	transform: scale(1.3);
+	transform: scale(1.2);
+	filter: grayscale(1);
 	z-index: 1;
 }
 
