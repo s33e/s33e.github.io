@@ -190,8 +190,12 @@ footer p{
 	text-align: right;
 }
 
+footer a{
+	margin: 0 10px;
+}
+
 footer a:hover{
-	color: green;
+	color: #2BD867;
 }
 
 /***************/
