@@ -117,7 +117,13 @@ a.back-link{
 	#5B6169
 }
 
-
+a{
+/*	width: 100px;*/
+	display: block;
+	white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /******************/
 /**** ELEMENTS ****/
