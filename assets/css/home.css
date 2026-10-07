@@ -1,0 +1,73 @@
+/* s33e start page: one logo, one line, one way in. */
+:root{
+	--bg: #FBFBFD;
+	--ink: #1D1D1F;
+	--quiet: #6E6E73;
+	--faint: #86868B;
+	--link: #0066CC;
+	--font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body{ margin: 0; padding: 0; height: 100%; background: var(--bg); }
+
+body{
+	font-family: var(--font);
+	color: var(--ink);
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+::selection{ background: var(--ink); color: var(--bg); }
+
+.hero{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 48px 24px;
+	text-align: center;
+}
+
+.hero-logo{
+	width: clamp(180px, 28vw, 340px);
+	height: auto;
+	display: block;
+}
+
+.hero-line{
+	margin: clamp(28px, 4vw, 44px) 0 0;
+	font-size: clamp(17px, 1.6vw, 21px);
+	font-weight: 400;
+	letter-spacing: 0.01em;
+	color: var(--quiet);
+}
+
+.hero-link{
+	margin-top: 18px;
+	font-size: clamp(17px, 1.6vw, 21px);
+	font-weight: 400;
+	color: var(--link);
+	text-decoration: none;
+}
+.hero-link:hover{ text-decoration: underline; }
+.hero-link:focus-visible{ outline: 2px solid var(--link); outline-offset: 4px; border-radius: 4px; }
+
+.foot{
+	padding: 20px 24px 28px;
+	text-align: center;
+	font-size: 12px;
+	color: var(--faint);
+}
+
+/* one orchestrated entrance, then stillness */
+@media (prefers-reduced-motion: no-preference){
+	.hero-logo, .hero-line, .hero-link{ animation: rise 0.9s cubic-bezier(.25,.1,.25,1) both; }
+	.hero-logo{ animation-name: focus; }
+	.hero-line{ animation-delay: 0.35s; }
+	.hero-link{ animation-delay: 0.55s; }
+}
+@keyframes focus{ from{ opacity: 0; filter: blur(8px); transform: scale(1.03); } to{ opacity: 1; filter: blur(0); transform: none; } }
+@keyframes rise{ from{ opacity: 0; transform: translateY(8px); } to{ opacity: 1; transform: none; } }
