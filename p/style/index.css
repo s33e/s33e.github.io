@@ -70,10 +70,8 @@ a.back-link{
 	font-weight: 400;
 	color: var(--link);
 	text-decoration: none;
-	text-transform: lowercase;
 	letter-spacing: 0;
 }
-a.back-link::first-letter{ text-transform: uppercase; }
 a.back-link::before{ content: "\2039\00a0"; font-size: 1.15em; }
 a.back-link:hover{ text-decoration: underline; }
 
